@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下，你就知道</title>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .sousuokuang {
+            border: 1px solid #b6b6b6;
+            height: 40px;
+            width: 548px;
+            font-size: 20px;
+        }
+
+        .tupian {
+            text-align: center;
+            border: 0;
+            width: 300px;
+            height: 140px;
+        }
+
+        .middle {
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            margin-top: 13%;
+        }
+
+        .baiduyixia{
+            background-color: #4e6ef2;
+            height: 43px;
+            color:white;
+            font-size: 20px;
+            border: 0;
+        }
+
+        .zuoshangjiao{
+            text-align: left;
+            top: 3%;
+            left: 20px;
+            position: absolute;
+            font-size: 20px;
+        }
+
+        .youshangjiao{
+            text-align: right;
+            top: 3%;
+            right: 20px;
+            position: absolute;
+            font-size: 20px;
+        }
+
+        .dibu {
+            text-align: center;
+            margin-top: 25%;
+            color: #bbbb;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="middle">
+        <form action="http://www.baidu.com/baidu" target="_blank">
+            <a href="https://www.baidu.com/" target="_blank"  align="center">
+                <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="Baidu" class="tupian">
+            </a>
+            <br/>
+            <input type="text" class="sousuokuang" name="word">
+            <input type="submit" value="百度一下" class="baiduyixia" href="https://www.baidu.com/">
+        </form>
+    </div>
+    
+    <div style="text-align: left;">
+        <div class="zuoshangjiao">
+        <a href="#">新闻</a>
+        <a href="#">hao123</a>
+        <a href="#">地图</a>
+        <a href="#">直播</a>
+        <a href="#">视频</a>
+        <a href="#">贴吧</a>
+        <a href="#">学术</a>
+        <a href="#">更多</a>
+        </div>
+    </div>
+
+    <div style="text-align: right;">
+        <div class="youshangjiao" >
+        <a href="#">设置</a>
+        <a href="#">登录</a>
+        </div>
+    </div>
+
+    <div style="text-align: center;" class="dibu">
+    <span>关于百度</span>
+    <span>About Baidu</span>
+    <span>帮助中心</span>
+    <span>京公网安备11000002000001号</span>
+    <span>京ICP证030173号</span>
+    <span>@2021 Baidu</span>
+    <span>互联网药品信息服务资格证书 (京)-经营性-2017-0020</span>
+    <span>信息网络传播视听节目许可证 0110516</span>
+    </div>
+</body>
+</html>
