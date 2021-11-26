@@ -32,17 +32,17 @@
     <p>我给你我的寂寞、我的黑暗、我心的饥渴；我试图用困惑、<span>危险</span>、失败来打动你。</p>
     <input type="button" value="嘿嘿嘿" id="button">
     <script>
-        let abc=document.getElementsByTagName('span');
+        let arr=document.getElementsByTagName('span');
         let button =document.getElementById('button'); 
         let flag=0;
         button.onclick=function(){
             if(flag == 0){
-                for(let i=0;i<abc.length;i++){
-                abc[i].className="span change";}
+                for(let i=0;i<arr.length;i++){
+                arr[i].className="span change";}
                 flag=1;
             }else{
-                for(let i=0;i<abc.length;i++){
-                abc[i].className="span";}
+                for(let i=0;i<arr.length;i++){
+                arr[i].className="span";}
                 flag=0;
             }
         }
