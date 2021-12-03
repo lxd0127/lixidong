@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.one {
+    background: aqua;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.two {
+    background:rebeccapurple;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: absolute;
+    left: 0px;
+    top: 90px;
+}
+.three {
+    background: green;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    position: absolute;
+    left: 0px;
+    top: 180px;
+}
+    </style>
+</head>
+<body>
+    <div class="one" id="1"></div>
+    <div class="two" id="2"></div>
+    <div class="three" id="3"></div>
+</body>
+
+<script>
+    function animate(obj,target){
+        var timer = setInterval(function(){
+        if ( obj.offsetLeft >= target){
+            clearInterval(timer);
+        }
+        obj.style.left=obj.offsetLeft+1+'px';
+    },50/3);
+    }
+    var first = document.getElementById('1');
+    var second = document.getElementById('2');
+    var third = document.getElementById('3');
+    animate(first,198);
+    setTimeout(function(){
+        animate(second,198);
+    setTimeout(function(){
+        animate(third,198);
+    },3300);
+    },3300);
+    
+</script>
+</html>
